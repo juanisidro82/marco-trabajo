@@ -37,8 +37,6 @@ framework/                  # Canonical framework docs — edit these, not the c
   roles_de_herramientas.md
   git_native.md
   principios_desarrollo_agente.md
-  modelo_por_capa.md
-  protocolo_blueprint.md
   pycharm_practicas.md
 templates/
   CLAUDE_template.md        # Skeleton for new projects
