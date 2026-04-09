@@ -28,9 +28,6 @@ When asked to propagate a change to one or more projects:
 |---------|------|--------------|
 | agenda | ~/agenda/ | projects/agenda.md |
 | tortoisemazbot2 | ~/herramientas/tortoisemazbot2/ | projects/tortoisemazbot2.md |
-| TortoiseMazAgent | ~/herramientas/TortoiseMazAgent/ (+ Tortoise/) | projects/TortoiseMazAgent.md |
-| TortoiseMazArch | ~/herramientas/TortoiseMazArch/ | projects/TortoiseMazArch.md |
-| TortoiseMazOps | ~/herramientas/TortoiseMazOps/ | projects/TortoiseMazOps.md |
 
 ## Repository Structure
 
@@ -38,14 +35,17 @@ When asked to propagate a change to one or more projects:
 framework/                  # Canonical framework docs — edit these, not the copies
   perfil_usuario.md
   roles_de_herramientas.md
-  vibe_coding_profesional.md
   git_native.md
   principios_desarrollo_agente.md
+  modelo_por_capa.md
+  protocolo_blueprint.md
+  pycharm_practicas.md
 templates/
   CLAUDE_template.md        # Skeleton for new projects
 projects/
   agenda.md                 # Context + file mapping for agenda
   tortoisemazbot2.md        # Context + file mapping for tortoisemazbot2
+archived/                   # Abandoned projects and methodologies
 ```
 
 ## Adding a New Project
