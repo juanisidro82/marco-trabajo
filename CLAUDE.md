@@ -28,6 +28,9 @@ When asked to propagate a change to one or more projects:
 |---------|------|--------------|
 | agenda | ~/agenda/ | projects/agenda.md |
 | tortoisemazbot2 | ~/herramientas/tortoisemazbot2/ | projects/tortoisemazbot2.md |
+| TortoiseMazAgent | ~/herramientas/TortoiseMazAgent/ (+ Tortoise/) | projects/TortoiseMazAgent.md |
+| TortoiseMazArch | ~/herramientas/TortoiseMazArch/ | projects/TortoiseMazArch.md |
+| TortoiseMazOps | ~/herramientas/TortoiseMazOps/ | projects/TortoiseMazOps.md |
 
 ## Repository Structure
 
