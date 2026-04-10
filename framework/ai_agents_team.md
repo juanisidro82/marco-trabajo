@@ -4,34 +4,31 @@
 
 This repository operates under the **Centaur Model** (see `centaur_model.md`). In this framework, the **User is the Boss/Supervisor**, acting as the "Rider" who directs a specialized team of AI "Team Members" (The Horse).
 
-Success is evaluated by **results and observable evidence**, not by following a prior plan. The Supervisor delegates tasks based on each team member's specific strengths and "salary" level (model tier).
+Success is evaluated by **results and observable evidence**, not by following a prior plan. The Supervisor delegates tasks based on each team member's specific strengths.
 
 ---
 
 ## The Supervisor (The Rider)
 - **Role:** Sets the vision, evaluates performance, and provides course correction.
 - **Style:** Bricolage. He knows what is needed once he sees it functioning.
-- **Levers:** Subscription tier management, task allocation, and cross-review orchestration.
+- **Levers:** Task allocation and cross-review orchestration.
 
 ---
 
 ## Team Members (The Horse)
 
-### Claude Code — Premium Auditor
+### Claude Code — Auditor & Logic Reviewer
 - **Role:** Deep logic review, risk assessment, and auditing complex changes.
 - **When to use:** Final verification, edge-case detection, or architecture-heavy refactors.
-- **Level:** Premium tier (e.g., Sonnet/Opus).
 
 ### Gemini CLI — Stability & Context Analyst
 - **Role:** Consistent execution, large-scale context handling, and operational continuity.
 - **When to use:** Maintenance, repeatable workflows, and maintaining the project's "big picture".
-- **Level:** Stable baseline (e.g., Gemini Pro/Ultra).
 
-### Codex CLI — Creative Builder & Rapid Prototyper
-- **Role:** Fast coding, technical exploration, and converting intent into code immediately.
-- **Context Artifact:** `CODEX.md` (Manual reference). Since Codex does not load instructions automatically, the Supervisor should provide the contents of `CODEX.md` at the start of the session to set the "Creative Builder" context.
-- **When to use:** Rapid iteration cycles, implementation of new features, and "boots on the ground" coding.
-- **Level:** Fast execution tier.
+### Codex CLI — Complementary Builder
+- **Role:** Fast coding and technical exploration. Codex approaches problems differently than Claude — they complement each other rather than duplicate effort.
+- **Context Artifact:** `CODEX.md` (Manual reference). Since Codex does not load instructions automatically, the Supervisor should provide the contents of `CODEX.md` at the start of the session to set context.
+- **When to use:** Rapid iteration cycles, implementation of new features, and as a second perspective when Claude's approach needs a counterpoint.
 
 ---
 

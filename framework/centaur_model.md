@@ -28,16 +28,6 @@ The Agents (Team Members) are the execution engine. Their role is to:
 
 ---
 
-## The "Salary" Incentive (Model Tiering)
-
-While AI agents do not "feel" motivation, the **Supervisor** manages their performance through **Subscription Levels**.
-- **High Performance:** Rewarded with access to higher-tier models (e.g., Opus/Ultra), larger context windows, and more specialized tools.
-- **Under-performance:** Results in downgrading or replacement with a different specialist.
-
-This creates a rational business environment where the "Boss" invests more in the agents that produce the highest quality output with the least amount of technical debt.
-
----
-
 ## Operational Rule: Bricolage over Architecture
 
 Centaurs do not wait for a complete blueprint. They start with a **Spike** (exploratory code), observe the reaction of the material, and then the Rider guides the Horse towards the final implementation.

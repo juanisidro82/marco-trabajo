@@ -1,27 +1,28 @@
 # Quality Standards: Cross-Agent Validation
 
-## The Universal Clarity Rule
-A rule, instruction, or business logic is only considered **Stable** when it passes the **Triple Consensus Test**.
+## Purpose
 
-> **"If Gemini understands the rule, any model understands it. If all three agents understand it the same way, the instruction is bulletproof."**
+LLMs are non-deterministic — the same prompt can produce different interpretations across models or even across sessions. The **Triple Consensus Test** is an occasional tool the Supervisor uses to compensate for that randomness, not a mandatory gate on every task.
 
 ---
 
-## The Triple Consensus Test (The Boss's Lever)
+## The Triple Consensus Test
 
-The Supervisor (The Rider) uses the three agents to validate the robustness of the team's "memory":
+Run the same prompt or rule across the three agents and compare their interpretations:
 
-1.  **The Gemini Standard (Baseline):** Gemini CLI acts as the clarity benchmark. Because of its stable and literal nature, if Gemini can parse an instruction without hallucinating, the instruction is well-structured.
-2.  **The Claude Audit (Sanity):** Claude Code checks for edge cases and logical gaps that the other two might miss.
-3.  **The Codex Verification (Practicality):** Codex CLI ensures the instruction is actionable and translates directly into working code.
+1.  **Gemini** — baseline clarity check: if Gemini parses it without hallucinating, the instruction is well-structured.
+2.  **Claude** — audits for edge cases and logical gaps.
+3.  **Codex** — verifies the instruction is actionable and translates to working code.
+
+Most sessions use only one agent. The test is reserved for moments where non-determinism matters.
 
 ---
 
 ## When to use Cross-Agent Validation
 
-- **Defining New Business Rules:** Before adding a permanent rule to `CLAUDE.md` or `GEMINI.md`.
-- **Complex Refactoring:** When the implementation path is non-obvious.
-- **Ambiguity Detection:** When a session fails, the Supervisor re-runs the same prompt across the three agents to find where the communication broke down.
+- **Ambiguity Detection:** When a session fails, re-run the same prompt across agents to find where interpretation diverged.
+- **Defining Permanent Rules:** Before adding a rule to `CLAUDE.md` or `GEMINI.md` that all agents must follow.
+- **Non-obvious Architecture Decisions:** When the correct implementation path is genuinely unclear.
 
 ---
 
