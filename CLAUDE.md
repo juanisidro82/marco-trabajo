@@ -37,6 +37,10 @@ framework/                  # Canonical framework docs — edit these, not the c
   ai_agents_team.md
   agent_development_principles.md
   git_native_workflow.md
+scripts/                    # Operational scripts for the team
+  new_session_report.sh     # Generate session reports
+reports/
+  sessions/                 # Mandatory session reports from team members
 templates/
   CLAUDE_template.md        # Skeleton for new projects
 projects/

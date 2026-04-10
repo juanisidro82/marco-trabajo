@@ -61,4 +61,12 @@ In this workflow, the **User acts as the Boss/Supervisor**. AI agents are not pa
 - **No Over-Planning:** Agents should prefer building prototypes over asking for extensive specifications.
 - **Error as Evidence:** If something fails, show the error/log immediately. The Boss uses evidence to clarify direction.
 - **Knowledge Consolidation:** At the end of a session, agents must update the team's "memory" (docs/scripts) so the Boss doesn't have to repeat instructions.
+- **Mandatory Session Report:** Every working session must conclude with a structured report generated via `./scripts/new_session_report.sh`. This report serves as the official handoff for the next agent or session.
+
+### Session Reporting Standard
+The report must include:
+- **Operational Rationale:** Why this work was prioritized.
+- **Technical Rationale:** Implementation decisions and tradeoffs.
+- **Validation Evidence:** Commands or logs proving the fix works.
+- **Cross-Review Request:** Explicit instructions for the next agent (e.g., "Claude Code to audit security").
 - **Complementary Views:** It is better to have 3 complementary viewpoints under fixed cost and quality control than a single fast viewpoint with higher operational risk.
