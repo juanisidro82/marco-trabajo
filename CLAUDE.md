@@ -36,6 +36,7 @@ framework/                  # Canonical framework docs — edit these, not the c
   user_profile.md
   ai_agents_team.md
   centaur_model.md
+  quality_standards.md
   agent_development_principles.md
   git_native_workflow.md
 scripts/                    # Operational scripts for the team
