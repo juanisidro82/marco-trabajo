@@ -36,7 +36,6 @@ framework/                  # Canonical framework docs — edit these, not the c
   user_profile.md
   ai_agents_team.md
   agent_development_principles.md
-  pycharm_practices.md
   git_native_workflow.md
 templates/
   CLAUDE_template.md        # Skeleton for new projects
