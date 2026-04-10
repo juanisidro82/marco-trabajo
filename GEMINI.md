@@ -18,7 +18,8 @@ As the Stability & Context Analyst, my focus is on **operational continuity**. W
 - `framework/`: Canonical documentation (English). The source of truth.
 - `projects/`: Mapping files (English). Defines how framework docs are distributed in specific projects.
 - `scripts/`: Operational tools for the AI team.
-- `reports/sessions/`: Mandatory session history for organizational memory.
+- `reports/sessions/`: Historical session records — read-only reference. Use only when the Supervisor asks to analyze a past agent session.
+- `archived/`: Abandoned projects and methodologies — historical reference only. Do not modify.
 
 ## Framework Propagation Protocol
 
@@ -38,10 +39,9 @@ I follow the **Milestone Rule**:
 
 ## Session Management & Reporting
 
-Every session MUST conclude with a structured report:
-1.  Run `./scripts/new_session_report.sh <agent> <short-topic>` (example: `./scripts/new_session_report.sh gemini framework-alignment`).
-2.  The report must document: Operational Rationale, Technical Rationale, Validation Evidence, and Instructions for the next agent.
-3.  The report is the official handoff; it must be clear and actionable.
+**Always:** Commit per milestone with a semantic message.
+
+**Optional — long implementation sessions only:** Run `./scripts/new_session_report.sh gemini <short-topic>` to generate a handoff report. Use only when the Supervisor requests it or when the session involves significant decisions worth documenting for future reference.
 
 ## Essential Commands
 

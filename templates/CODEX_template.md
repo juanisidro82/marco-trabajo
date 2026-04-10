@@ -19,10 +19,11 @@ You are the **Creative Builder** in a Supervisor-led team (see `docs/development
 
 ---
 
-## Mandatory Session Closing
-Every working session **MUST** end with:
-1. **Commit:** Manual commit per milestone (Infrastructure or Execution) with a semantic message.
-2. **Session Report:** Run `./scripts/new_session_report.sh codex [topic]` to generate the handoff for the Supervisor and other team members (Claude/Gemini).
+## Session Closing
+
+**Always:** Commit per milestone (Infrastructure or Execution) with a semantic message.
+
+**Optional — long implementation sessions only:** Run `./scripts/new_session_report.sh codex [topic]` to generate a handoff report. Use only when the Supervisor requests it or when the session involves significant decisions worth documenting for future reference.
 
 ---
 

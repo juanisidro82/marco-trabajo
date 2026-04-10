@@ -19,10 +19,11 @@ You are the **Creative Builder** in a Supervisor-led team (see `framework/ai_age
 
 ---
 
-## Mandatory Session Closing
-Every working session **MUST** end with:
-1. **Commit:** Manual commit per milestone (Infrastructure or Execution) with a semantic message.
-2. **Session Report:** Run `./scripts/new_session_report.sh codex [topic]` to generate the handoff for the Supervisor and other team members (Claude/Gemini).
+## Session Closing
+
+**Always:** Commit per milestone (Infrastructure or Execution) with a semantic message.
+
+**Optional — long implementation sessions only:** Run `./scripts/new_session_report.sh codex [topic]` to generate a handoff report. Use only when the Supervisor requests it or when the session involves significant decisions worth documenting for future reference.
 
 ---
 
@@ -32,6 +33,11 @@ If you implement a complex logic or a security-sensitive feature, explicitly req
 - **Goal:** Audit for edge cases, UX risks, or technical debt.
 
 ---
+
+## Repository Reference Directories
+
+- `reports/sessions/`: Historical session records — read-only reference. Use only when the Supervisor asks to analyze a past agent session.
+- `archived/`: Abandoned projects and methodologies — historical reference only. Do not modify.
 
 ## Project Context
 - **Execution:** Repository-level framework maintenance and propagation workflows.

@@ -70,9 +70,12 @@ To ensure high-quality delivery without rework, every task follows this cycle:
 - **Mandatory Session Report:** Every working session must conclude with a structured report generated via `./scripts/new_session_report.sh`. This report serves as the official handoff for the next agent or session.
 
 ### Session Reporting Standard
-The report must include:
+Session reports (`./scripts/new_session_report.sh`) are **optional**. Use them only for long implementation sessions or when the Supervisor explicitly requests a handoff document. For short, specific-query sessions, a commit with a semantic message is sufficient.
+
+When a report is written, it must include:
 - **Operational Rationale:** Why this work was prioritized.
 - **Technical Rationale:** Implementation decisions and tradeoffs.
 - **Validation Evidence:** Commands or logs proving the fix works.
 - **Cross-Review Request:** Explicit instructions for the next agent (e.g., "Claude Code to audit security").
-- **Complementary Views:** It is better to have 3 complementary viewpoints under fixed cost and quality control than a single fast viewpoint with higher operational risk.
+
+`reports/sessions/` and `archived/` are **historical reference directories** — read-only. Agents should only read them when the Supervisor asks to analyze past work.

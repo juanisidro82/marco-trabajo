@@ -49,13 +49,13 @@ framework/                  # Canonical framework docs — edit these, not the c
 scripts/                    # Operational scripts for the team
   new_session_report.sh     # Generate session reports
 reports/
-  sessions/                 # Mandatory session reports from team members
+  sessions/                 # Historical session reports — read-only reference, not active workflow
 templates/
   CLAUDE_template.md        # Skeleton for new projects
 projects/
   agenda.md                 # Context + file mapping for agenda
   tortoisemazbot2.md        # Context + file mapping for tortoisemazbot2
-archived/                   # Abandoned projects and methodologies
+archived/                   # Abandoned projects and methodologies — historical reference only
 ```
 
 ## Adding a New Project
