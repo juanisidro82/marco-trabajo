@@ -33,11 +33,11 @@ When asked to propagate a change to one or more projects:
 
 ```
 framework/                  # Canonical framework docs — edit these, not the copies
-  perfil_usuario.md
-  roles_de_herramientas.md
-  git_native.md
-  principios_desarrollo_agente.md
-  pycharm_practicas.md
+  user_profile.md
+  ai_agents_team.md
+  agent_development_principles.md
+  pycharm_practices.md
+  git_native_workflow.md
 templates/
   CLAUDE_template.md        # Skeleton for new projects
 projects/
