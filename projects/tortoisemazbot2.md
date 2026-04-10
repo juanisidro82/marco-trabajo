@@ -18,12 +18,12 @@ Exposes a web interface (Flask/FastAPI) for operators.
 ## Framework File Locations
 | Framework Doc | Location in Project |
 |---------------|---------------------|
-| user_profile | `docs/development/perfil_usuario.md` |
-| agent_development_principles | `docs/development/principios_desarrollo_agente.md` |
+| user_profile | `docs/development/user_profile.md` |
+| agent_development_principles | `docs/development/agent_development_principles.md` |
 | ai_agents_team | `docs/development/ai_agents_team.md` |
 | centaur_model | `docs/development/centaur_model.md` |
 | quality_standards | `docs/development/quality_standards.md` |
-| git_native_workflow | `docs/development/git_native.md` |
+| git_native_workflow | `docs/development/git_native_workflow.md` |
 
 ## Propagation Notes
 - `CLAUDE.md` contains project-specific sections that must NOT be overwritten:
@@ -37,6 +37,7 @@ Exposes a web interface (Flask/FastAPI) for operators.
 - Framework docs in `docs/development/` are pure framework — can be replaced fully.
 - `docs/auditor.md`, `docs/decisions.md`, `docs/glossary.md` are project-specific — never touch.
 - `docs/runbooks/` and `docs/prompts/` are project-specific — never touch.
+- Session reports are transitioning to `reports/sessions/`; legacy operational outputs may still appear in `sessions/`.
 
 ## Key Modules
 - `app/auditor.py` — main auditor: scans DB for overdue clients, labels by state

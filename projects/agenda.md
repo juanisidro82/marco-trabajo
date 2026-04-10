@@ -18,12 +18,12 @@ Backend: Anytype CLI (`anytype serve`) on port `31012`.
 ## Framework File Locations
 | Framework Doc | Location in Project |
 |---------------|---------------------|
-| user_profile | `docs/perfil_usuario.md` |
-| agent_development_principles | `docs/principios_desarrollo_agente.md` |
-| ai_agents_team | `docs/vibe/ai_agents_team.md` |
-| centaur_model | `docs/vibe/centaur_model.md` |
-| quality_standards | `docs/vibe/quality_standards.md` |
-| git_native_workflow | `docs/vibe/git_native.md` |
+| user_profile | `docs/development/user_profile.md` |
+| agent_development_principles | `docs/development/agent_development_principles.md` |
+| ai_agents_team | `docs/development/ai_agents_team.md` |
+| centaur_model | `docs/development/centaur_model.md` |
+| quality_standards | `docs/development/quality_standards.md` |
+| git_native_workflow | `docs/development/git_native_workflow.md` |
 
 ## Propagation Notes
 - `CLAUDE.md` contains project-specific sections that must NOT be overwritten:
@@ -38,8 +38,8 @@ Backend: Anytype CLI (`anytype serve`) on port `31012`.
   - Command reference table
   - Coding Standards (Project-specific rules)
 - `GEMINI.md` also contains project-specific Anytype domain model — do not overwrite.
-- Framework docs in `docs/vibe/` are pure framework — can be replaced fully.
-- `docs/perfil_usuario.md` and `docs/principios_desarrollo_agente.md` are pure framework — can be replaced fully.
+- Framework docs in `docs/development/` are pure framework — can be replaced fully.
+- `docs/runbooks/` and `docs/prompts/` are available for project-specific operational artifacts.
 
 ## Key Modules
 - `agenda.py` — generic Anytype API client (list, get, create, update, delete, search)
