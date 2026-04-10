@@ -35,6 +35,7 @@ When asked to propagate a change to one or more projects:
 framework/                  # Canonical framework docs — edit these, not the copies
   user_profile.md
   ai_agents_team.md
+  centaur_model.md
   agent_development_principles.md
   git_native_workflow.md
 scripts/                    # Operational scripts for the team

@@ -1,48 +1,45 @@
 # AI Agents Team Operating Model
 
-## Overview: The Supervision Model
+## Overview: The Supervisor-led Team
 
-In this workflow, the **User acts as the Boss/Supervisor**. AI agents are not passive tools, but **specialized team members** operating under direct management. Success is not driven by a rigid prior plan (Architecture), but by the Supervisor's ability to direct execution and course-correct based on visible results.
+This repository operates under the **Centaur Model** (see `centaur_model.md`). In this framework, the **User is the Boss/Supervisor**, acting as the "Rider" who directs a specialized team of AI "Team Members" (The Horse).
 
----
-
-## The Boss (User) — Direction and Criteria
-- **Role:** Vision provider, prototype evaluator, and final decision-maker.
-- **Style:** Bricolage / Exploratory. The Boss knows what they want when they see it working.
-- **Responsibility:** Ensure agents do not drift from the objective and consolidate knowledge at the end of each session.
+Success is evaluated by **results and observable evidence**, not by following a prior plan. The Supervisor delegates tasks based on each team member's specific strengths and "salary" level (model tier).
 
 ---
 
-## Claude Code — Premium Auditor & Specialist
-- **Profile:** Expert in logic, code structure, and deep technical reasoning.
-- **When to assign a task:** 
-  - High-level critical review and auditing.
-  - Complex architectural decisions or trade-offs.
-  - Risk assessment and final quality checks.
-- **Working Style:** Do not ask for long plans; propose minimal prototypes or critical audits.
-- **Strength:** Best at detecting gaps, edge cases, and UX risks.
+## The Supervisor (The Rider)
+- **Role:** Sets the vision, evaluates performance, and provides course correction.
+- **Style:** Bricolage. He knows what is needed once he sees it functioning.
+- **Levers:** Subscription tier management, task allocation, and cross-review orchestration.
 
 ---
 
-## Gemini CLI — Stable Baseline & Context Analyst
-- **Profile:** Employee with massive memory and high-volume processing capacity.
-- **When to assign a task:**
-  - Daily tasks, repeatable workflows, and baseline operations.
-  - Analyzing many files at once to find patterns.
-  - Maintaining full context for large projects that exceed other agents' windows.
-- **Working Style:** Provide full context (docs + code) and request execution based on established rules.
-- **Strength:** Consistent quality and operational continuity. Does not forget details.
+## Team Members (The Horse)
+
+### Claude Code — Premium Auditor
+- **Role:** Deep logic review, risk assessment, and auditing complex changes.
+- **When to use:** Final verification, edge-case detection, or architecture-heavy refactors.
+- **Level:** Premium tier (e.g., Sonnet/Opus).
+
+### Gemini CLI — Stability & Context Analyst
+- **Role:** Consistent execution, large-scale context handling, and operational continuity.
+- **When to use:** Maintenance, repeatable workflows, and maintaining the project's "big picture".
+- **Level:** Stable baseline (e.g., Gemini Pro/Ultra).
+
+### Codex CLI — Creative Builder & Rapid Prototyper
+- **Role:** Fast coding, technical exploration, and converting intent into code immediately.
+- **When to use:** Rapid iteration cycles, implementation of new features, and "boots on the ground" coding.
+- **Level:** Fast execution tier.
 
 ---
 
-## Codex CLI — Creative Builder
-- **Profile:** Fast implementation, technical exploration, and rapid iteration.
-- **When to assign a task:**
-  - Coding, refactors, and fast fixes.
-  - Turning ideas into concrete output quickly.
-  - Rapidly iterating on a specific module or feature.
-- **Working Style:** Short instructions, immediate execution. The "boots on the ground" for coding.
-- **Strength:** Speed and focus on technical implementation.
+## Cross-Review Protocol
+To leverage the team's diversity, the Supervisor may request a **Cross-Review**:
+1. **Gemini** creates the baseline.
+2. **Codex** implements the feature.
+3. **Claude** audits for risks and edge cases.
+4. **The Supervisor** approves the final result.
 
 ---
 
