@@ -44,6 +44,14 @@ To leverage the team's diversity, the Supervisor may request a **Cross-Review**:
 
 ---
 
+## Lifecycle: Validate, Build, Automate
+To ensure high-quality delivery without rework, every task follows this cycle:
+1.  **Validate (Infrastructure):** Ensure the bridge/artefact (API, DB, client) works as expected through a cross-review. No production code is written until the material is validated.
+2.  **Build (Execution):** Agents implement the logic based on the validated artefact, using logs and observable evidence to self-correct during the process.
+3.  **Automate/Handoff:** Once the functionality is stable and logs show consistent success, the task is considered done. The agent then moves to the next task, leaving behind a stable system.
+
+---
+
 ## Supervision Workflow (Bricolage-Friendly)
 
 1. **Initiative (Boss):** "I want to try X, build something minimal so I can see it."
