@@ -27,10 +27,12 @@ Exposes a web interface (Flask/FastAPI) for operators.
 
 ## Propagation Notes
 - `CLAUDE.md` contains project-specific sections that must NOT be overwritten:
+  - Framework-controlled sections (marked with `<!-- FRAMEWORK_SECTION: id -->`):
+    - `user_profile` (Cognitive & Collaboration)
+    - `approach` (Centaur Model)
+    - `development_principles` (Tech Principles)
   - Language rules (Working: Spanish / Output: English)
-  - Approach section
-  - User Profile section (can be updated if perfil_usuario.md changes)
-  - Development Principles (can be updated if principios_desarrollo_agente.md changes)
+  - Container Environment (Docker info)
   - Security check before any new script
 - Framework docs in `docs/development/` are pure framework — can be replaced fully.
 - `docs/auditor.md`, `docs/decisions.md`, `docs/glossary.md` are project-specific — never touch.

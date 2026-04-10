@@ -27,12 +27,16 @@ Backend: Anytype CLI (`anytype serve`) on port `31012`.
 
 ## Propagation Notes
 - `CLAUDE.md` contains project-specific sections that must NOT be overwritten:
+  - Framework-controlled sections (marked with `<!-- FRAMEWORK_SECTION: id -->`):
+    - `user_profile` (Cognitive & Collaboration)
+    - `approach` (Centaur Model)
+    - `development_principles` (Tech Principles)
   - Session Startup Protocol (mandatory file reading order)
   - Milestone Distinction (Infrastructure vs Execution)
   - Project Structure
   - Anytype Environment (port, API prefix, space ID)
   - Command reference table
-  - Coding Standards (only this section may reference the framework)
+  - Coding Standards (Project-specific rules)
 - `GEMINI.md` also contains project-specific Anytype domain model — do not overwrite.
 - Framework docs in `docs/vibe/` are pure framework — can be replaced fully.
 - `docs/perfil_usuario.md` and `docs/principios_desarrollo_agente.md` are pure framework — can be replaced fully.
