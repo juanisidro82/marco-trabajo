@@ -29,6 +29,7 @@ Success is evaluated by **results and observable evidence**, not by following a 
 
 ### Codex CLI — Creative Builder & Rapid Prototyper
 - **Role:** Fast coding, technical exploration, and converting intent into code immediately.
+- **Context Artifact:** `CODEX.md` (Manual reference). Since Codex does not load instructions automatically, the Supervisor should provide the contents of `CODEX.md` at the start of the session to set the "Creative Builder" context.
 - **When to use:** Rapid iteration cycles, implementation of new features, and "boots on the ground" coding.
 - **Level:** Fast execution tier.
 
