@@ -67,10 +67,10 @@ To ensure high-quality delivery without rework, every task follows this cycle:
 - **No Over-Planning:** Agents should prefer building prototypes over asking for extensive specifications.
 - **Error as Evidence:** If something fails, show the error/log immediately. The Boss uses evidence to clarify direction.
 - **Knowledge Consolidation:** At the end of a session, agents must update the team's "memory" (docs/scripts) so the Boss doesn't have to repeat instructions.
-- **Mandatory Session Report:** Every working session must conclude with a structured report generated via `./scripts/new_session_report.sh`. This report serves as the official handoff for the next agent or session.
+- **Session Reports (Optional):** For long implementation sessions or when the Supervisor explicitly requests a handoff document, generate a report via `./scripts/new_session_report.sh`. For short, specific-query sessions, a semantic commit message is sufficient.
 
 ### Session Reporting Standard
-Session reports (`./scripts/new_session_report.sh`) are **optional**. Use them only for long implementation sessions or when the Supervisor explicitly requests a handoff document. For short, specific-query sessions, a commit with a semantic message is sufficient.
+Session reports are **optional**. Use them only for long implementation sessions or when the Supervisor explicitly requests a handoff document. For short, specific-query sessions, a commit with a semantic message is sufficient.
 
 When a report is written, it must include:
 - **Operational Rationale:** Why this work was prioritized.
