@@ -12,16 +12,18 @@ Exposes a web interface (Flask/FastAPI) for operators.
 | LLM | Context File |
 |-----|--------------|
 | Claude Code | `CLAUDE.md` |
+| Codex CLI | `CODEX.md` |
+| Gemini CLI | `GEMINI.md` |
 
 ## Framework File Locations
 | Framework Doc | Location in Project |
 |---------------|---------------------|
-| perfil_usuario | `docs/development/perfil_usuario.md` |
-| principios_desarrollo_agente | `docs/development/principios_desarrollo_agente.md` |
-| roles_de_herramientas | `docs/development/roles_de_herramientas.md` |
-| vibe_coding_profesional | `docs/development/vibe_coding_profesional.md` |
-| git_native | `docs/development/git_native.md` |
-| pycharm_practicas | `docs/development/pycharm_practicas.md` |
+| user_profile | `docs/development/perfil_usuario.md` |
+| agent_development_principles | `docs/development/principios_desarrollo_agente.md` |
+| ai_agents_team | `docs/development/ai_agents_team.md` |
+| centaur_model | `docs/development/centaur_model.md` |
+| quality_standards | `docs/development/quality_standards.md` |
+| git_native_workflow | `docs/development/git_native.md` |
 
 ## Propagation Notes
 - `CLAUDE.md` contains project-specific sections that must NOT be overwritten:
@@ -30,7 +32,7 @@ Exposes a web interface (Flask/FastAPI) for operators.
   - User Profile section (can be updated if perfil_usuario.md changes)
   - Development Principles (can be updated if principios_desarrollo_agente.md changes)
   - Security check before any new script
-- `docs/development/` files are pure framework — can be replaced fully.
+- Framework docs in `docs/development/` are pure framework — can be replaced fully.
 - `docs/auditor.md`, `docs/decisions.md`, `docs/glossary.md` are project-specific — never touch.
 - `docs/runbooks/` and `docs/prompts/` are project-specific — never touch.
 

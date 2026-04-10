@@ -29,6 +29,13 @@ When asked to propagate a change to one or more projects:
 | agenda | ~/agenda/ | projects/agenda.md |
 | tortoisemazbot2 | ~/herramientas/tortoisemazbot2/ | projects/tortoisemazbot2.md |
 
+## Mandatory Context Files (All Projects)
+
+Every registered project must include these three root-level context files:
+- `CLAUDE.md`
+- `CODEX.md`
+- `GEMINI.md`
+
 ## Repository Structure
 
 ```
@@ -64,5 +71,5 @@ archived/                   # Abandoned projects and methodologies
 ## Language
 
 - This file and `projects/*.md`: English (read by LLMs)
-- `framework/*.md`: Spanish (matches existing docs across projects)
+- `framework/*.md`: English (canonical framework language)
 - `templates/CLAUDE_template.md`: English (template for LLM context files)

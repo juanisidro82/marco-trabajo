@@ -12,17 +12,18 @@ Backend: Anytype CLI (`anytype serve`) on port `31012`.
 | LLM | Context File |
 |-----|--------------|
 | Claude Code | `CLAUDE.md` |
+| Codex CLI | `CODEX.md` |
 | Gemini CLI | `GEMINI.md` |
 
 ## Framework File Locations
 | Framework Doc | Location in Project |
 |---------------|---------------------|
-| perfil_usuario | `docs/perfil_usuario.md` |
-| principios_desarrollo_agente | `docs/principios_desarrollo_agente.md` |
-| roles_de_herramientas | `docs/vibe/roles_de_herramientas.md` |
-| vibe_coding_profesional | `docs/vibe/vibe_coding_profesional.md` |
-| git_native | `docs/vibe/git_native.md` |
-| pycharm_practicas | `docs/vibe/pycharm_practicas.md` |
+| user_profile | `docs/perfil_usuario.md` |
+| agent_development_principles | `docs/principios_desarrollo_agente.md` |
+| ai_agents_team | `docs/vibe/ai_agents_team.md` |
+| centaur_model | `docs/vibe/centaur_model.md` |
+| quality_standards | `docs/vibe/quality_standards.md` |
+| git_native_workflow | `docs/vibe/git_native.md` |
 
 ## Propagation Notes
 - `CLAUDE.md` contains project-specific sections that must NOT be overwritten:
@@ -33,7 +34,7 @@ Backend: Anytype CLI (`anytype serve`) on port `31012`.
   - Command reference table
   - Coding Standards (only this section may reference the framework)
 - `GEMINI.md` also contains project-specific Anytype domain model — do not overwrite.
-- `docs/vibe/` files are pure framework — can be replaced fully.
+- Framework docs in `docs/vibe/` are pure framework — can be replaced fully.
 - `docs/perfil_usuario.md` and `docs/principios_desarrollo_agente.md` are pure framework — can be replaced fully.
 
 ## Key Modules

@@ -15,7 +15,7 @@ As the Stability & Context Analyst, my focus is on **operational continuity**. W
 
 ## Repository Organization
 
-- `framework/`: Canonical documentation (Spanish). The source of truth.
+- `framework/`: Canonical documentation (English). The source of truth.
 - `projects/`: Mapping files (English). Defines how framework docs are distributed in specific projects.
 - `scripts/`: Operational tools for the AI team.
 - `reports/sessions/`: Mandatory session history for organizational memory.
@@ -39,7 +39,7 @@ I follow the **Milestone Rule**:
 ## Session Management & Reporting
 
 Every session MUST conclude with a structured report:
-1.  Run `./scripts/new_session_report.sh`.
+1.  Run `./scripts/new_session_report.sh <agent> <short-topic>` (example: `./scripts/new_session_report.sh gemini framework-alignment`).
 2.  The report must document: Operational Rationale, Technical Rationale, Validation Evidence, and Instructions for the next agent.
 3.  The report is the official handoff; it must be clear and actionable.
 
