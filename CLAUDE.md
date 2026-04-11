@@ -46,6 +46,7 @@ framework/                  # Canonical framework docs — edit these, not the c
   quality_standards.md
   agent_development_principles.md
   git_native_workflow.md
+  docs_conventions.md
 scripts/                    # Operational scripts for the team
   new_session_report.sh     # Generate session reports
 reports/
