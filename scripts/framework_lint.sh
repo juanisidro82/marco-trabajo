@@ -102,6 +102,22 @@ validate_project_context_files() {
   if [ -d "${project_path}/sessions" ]; then
     warn "${project_name}: carpeta legacy 'sessions/' encontrada en raíz — considerar migrar a 'reports/sessions/'"
   fi
+
+  # Validar convención de roadmaps (docs_conventions)
+  if [ -d "${project_path}/roadmap" ]; then
+    err "${project_name}: carpeta 'roadmap/' en raíz del proyecto — mover contenido a 'docs/roadmaps/'"
+  fi
+  if compgen -G "${project_path}/docs/*roadmap*.md" > /dev/null 2>&1; then
+    err "${project_name}: archivos *roadmap*.md sueltos en 'docs/' — mover a 'docs/roadmaps/pending/' o 'docs/roadmaps/done/'"
+  fi
+
+  # Verificar que docs_conventions esté propagado en los context files
+  for context_file in CLAUDE.md CODEX.md GEMINI.md; do
+    local cf="${project_path}/${context_file}"
+    if [ -f "$cf" ] && ! grep -q 'FRAMEWORK_SECTION: docs_conventions' "$cf"; then
+      warn "${project_name}: falta 'FRAMEWORK_SECTION: docs_conventions' en ${context_file}"
+    fi
+  done
 }
 
 sync_project_framework() {
