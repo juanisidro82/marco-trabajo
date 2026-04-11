@@ -89,11 +89,19 @@ validate_project_context_files() {
     return
   fi
 
-  for context_file in CLAUDE.md CODEX.md GEMINI.md; do
+  for context_file in CLAUDE.md CODEX.md GEMINI.md AGENTS.md; do
     if [ ! -f "${project_path}/${context_file}" ]; then
       err "${project_name}: falta ${context_file} en ${project_path}"
     fi
   done
+
+  # Detectar carpetas con nombre en español (convención incorrecta)
+  if [ -d "${project_path}/reports/sesiones" ]; then
+    err "${project_name}: carpeta 'reports/sesiones/' debe llamarse 'reports/sessions/'"
+  fi
+  if [ -d "${project_path}/sessions" ]; then
+    warn "${project_name}: carpeta legacy 'sessions/' encontrada en raíz — considerar migrar a 'reports/sessions/'"
+  fi
 }
 
 sync_project_framework() {
