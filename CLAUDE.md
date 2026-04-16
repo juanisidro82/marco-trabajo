@@ -28,6 +28,7 @@ When asked to propagate a change to one or more projects:
 |---------|------|--------------|
 | agenda | ~/agenda/ | projects/agenda.md |
 | tortoisemazbot2 | ~/herramientas/tortoisemazbot2/ | projects/tortoisemazbot2.md |
+| operaciones | ~/operaciones/ | projects/operaciones.md |
 
 ## Mandatory Context Files (All Projects)
 
