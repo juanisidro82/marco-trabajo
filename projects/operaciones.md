@@ -20,21 +20,24 @@ as an external data source for migration.
 > propagation cycle.
 
 ## Framework File Locations
-Framework docs have not yet been placed in a dedicated subfolder. Currently, framework
-content is embedded directly in `CLAUDE.md` and `GEMINI.md`.
-
 | Framework Doc | Location in Project |
 |---------------|---------------------|
-| (embedded) | `CLAUDE.md` and `GEMINI.md` (mixed with project-specific content) |
+| user_profile | `docs/development/user_profile.md` |
+| agent_development_principles | `docs/development/agent_development_principles.md` |
+| ai_agents_team | `docs/development/ai_agents_team.md` |
+| centaur_model | `docs/development/centaur_model.md` |
+| quality_standards | `docs/development/quality_standards.md` |
+| git_native_workflow | `docs/development/git_native_workflow.md` |
+| docs_conventions | `docs/development/docs_conventions.md` |
 
 ## Propagation Notes
-- `CLAUDE.md` is entirely project-specific (LLM Wiki rules, scripts, frontmatter schema,
-  FTS5 fields, operation rules). Framework sections are not yet separated.
-- `GEMINI.md` follows the same structure as `CLAUDE.md` with richer detail and emoji
-  formatting — also project-specific.
-- When propagating framework docs, prefer creating a `docs/` subfolder rather than
-  overwriting root context files.
-- `CODEX.md` needs to be created (can be seeded from `templates/CLAUDE_template.md`).
+- `CLAUDE.md` has project-specific sections (LLM Wiki rules, scripts, frontmatter schema,
+  FTS5 fields, operation rules) that must NOT be overwritten. Framework sections are marked
+  with `<!-- FRAMEWORK_SECTION: id -->` comments.
+- `GEMINI.md` follows a similar structure with richer detail — preserve all project-specific
+  content when propagating.
+- `CODEX.md` was created during initial propagation — update framework sections only.
+- Framework docs in `docs/development/` are pure framework — can be fully replaced.
 
 ## Key Scripts
 | Script | Purpose |
